@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body oncontextmenu="return false;" onkeydown="return disableDevTools(event);">
+    <video id="background-video" class="background-video" loop muted playsinline>
+        <source src="" type="video/mp4">
+    </video>
+
+    <div class="volume-controller" id="volume-controller">
+        <div class="volume-button" id="volume-button">
+            <img id="volume-icon" src="" alt="Volume">
+        </div>
+        <input type="range" min="0" max="100" value="50" class="volume-slider" id="volume-slider">
+    </div>
+
+    <div class="overlay" id="overlay">
+        <span></span>
+    </div>
+
+    <div class="content" id="content">
+        <div class="profile-container" id="profile-container">
+            <div class="avatar-container">
+                <img src="" alt="Avatar" class="avatar">
+            </div>
+            <div class="username">
+                <div class="uid"></div>
+            </div>
+
+            <div class="badges-container">
+            </div>
+
+            <p class="profile-description">
+                <span id="typing-text"></span>
+            </p>
+
+            <div class="line"></div>
+
+            <div class="social-icons">
+            </div>
+        </div>
+    </div>
+
+    <div class="download-button" id="download-button">
+        <img src="" alt="Download">
+    </div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
